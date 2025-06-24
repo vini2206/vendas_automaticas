@@ -5,63 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Venda Infoprodutos no Automático com IA</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #0f172a; color: white; padding: 2rem; text-align: center; }
-    section { padding: 2rem; max-width: 800px; margin: auto; background: white; }
-    <style>
-  .capa-container {
-    position: relative;
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  }
-
-  .imagem-capa {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .capa-container:hover .imagem-capa {
-    transform: scale(1.03);
-  }
-
-  .frase-sobreposta {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  }
-
-  @media (max-width: 600px) {
-    .frase-sobreposta {
-      font-size: 1.5rem;
-      left: 15px;
-      right: 15px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
     }
-  }
-</style>
 
-<div class="capa-container">
-  <img src="nome-da-imagem.jpeg" alt="Imagem de capa com mensagem" class="imagem-capa" />
-  <div class="frase-sobreposta">Transforme seu conhecimento em lucro com IA</div>
-</div>
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
 
-    h1, h2 { color: #1e293b; }
-    .cta, form button { background: #10b981; color: white; padding: 1rem; border: none; border-radius: 5px; font-size: 1.2rem; cursor: pointer; }
-    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #666; }
-    .cover { width: 100%; height: auto; margin-bottom: 2rem; border-radius: 8px; }
-    ul li { margin-bottom: 1rem; }
-    .icon { margin-right: 0.5rem; color: #10b981; }
-    .depoimento { background: #f0fdf4; padding: 1rem; border-left: 5px solid #10b981; margin-bottom: 1rem; border-radius: 4px; }
-    .garantia { margin-top: 2rem; text-align: center; font-weight: bold; color: #065f46; }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+    }
+
+    h1, h2 {
+      color: #1e293b;
+    }
+
+    .cta, form button {
+      background: #10b981;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .icon {
+      margin-right: 0.5rem;
+      color: #10b981;
+    }
+
+    .depoimento {
+      background: #f0fdf4;
+      padding: 1rem;
+      border-left: 5px solid #10b981;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+    }
+
+    .garantia {
+      margin-top: 2rem;
+      text-align: center;
+      font-weight: bold;
+      color: #065f46;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+    }
+
+    /* Estilo da imagem com frase sobreposta */
+    .capa-container {
+      position: relative;
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .imagem-capa {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .capa-container:hover .imagem-capa {
+      transform: scale(1.03);
+    }
+
+    .frase-sobreposta {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    @media (max-width: 600px) {
+      .frase-sobreposta {
+        font-size: 1.5rem;
+        left: 15px;
+        right: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -73,10 +120,12 @@
   </header>
 
   <section>
-    <img class="cover" src="https://cdn.create.microsoft.com/media/ai-cover-image.jpg" alt="Imagem de capa ilustrativa sobre vendas com IA" />
+    <div class="capa-container">
+      <img src="capa-landing.jpeg" alt="Imagem de capa com mensagem" class="imagem-capa" />
+      <div class="frase-sobreposta">Transforme seu conhecimento em lucro com IA</div>
+    </div>
 
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/22z3H5YMJkA" frameborder="0" allowfullscreen></iframe>
-
 
     <h2>🔥 O que você vai aprender:</h2>
     <ul>
