@@ -3,49 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venda Infoprodutos no Automático com IA</title>
-  <meta name="description" content="Aprenda a vender infoprodutos no automático usando inteligência artificial. Aula gratuita e prática para escalar seus resultados.">
+  <title>Venda Infoprodutos com IA</title>
+  <meta name="description" content="Aprenda a vender infoprodutos no automático com IA. Aula gratuita e prática para escalar seus resultados.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Estilos gerais */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f4f4f4;
+      background: #f9fafb;
+      color: #1f2937;
     }
 
     header {
       background: #0f172a;
       color: white;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      background: #10b981;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #059669;
     }
 
     section {
-      padding: 2rem;
-      max-width: 800px;
+      padding: 3rem 2rem;
+      max-width: 900px;
       margin: auto;
       background: white;
+      margin-top: -60px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 1;
     }
 
-    h1, h2 {
-      color: #1e293b;
+    .ilustracao {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 2rem;
     }
 
-    .cta, form button {
-      background: #10b981;
-      color: white;
-      padding: 1rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2rem;
-      cursor: pointer;
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.5rem;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
     }
 
     .icon {
@@ -53,116 +84,100 @@
       color: #10b981;
     }
 
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .formulario input {
+      padding: 0.9rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+
     .depoimento {
       background: #f0fdf4;
       padding: 1rem;
-      border-left: 5px solid #10b981;
+      border-left: 4px solid #10b981;
       margin-bottom: 1rem;
-      border-radius: 4px;
+      border-radius: 6px;
     }
 
     .garantia {
-      margin-top: 2rem;
       text-align: center;
       font-weight: bold;
+      margin-top: 2rem;
       color: #065f46;
     }
 
-    ul li {
-      margin-bottom: 1rem;
-    }
-
-    /* Estilo da imagem de capa com frase */
-    .capa-container {
-      position: relative;
-      width: 100%;
-      max-height: 400px;
-      overflow: hidden;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .imagem-capa {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .capa-container:hover .imagem-capa {
-      transform: scale(1.03);
-    }
-
-    .frase-sobreposta {
-      position: absolute;
-      bottom: 20px;
-      left: 30px;
-      color: white;
-      font-size: 2rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6b7280;
     }
 
     @media (max-width: 600px) {
-      .frase-sobreposta {
-        font-size: 1.5rem;
-        left: 15px;
-        right: 15px;
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .cta {
+        width: 100%;
+      }
+
+      section {
+        margin: 0 1rem;
+        border-radius: 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho principal -->
   <header>
     <h1>🚀 Transforme Seu Conhecimento em Vendas Automáticas</h1>
-    <p>Descubra como usar IA para escalar seu infoproduto e vender 24h por dia</p>
+    <p>Use a inteligência artificial para escalar seu curso ou e-book sem complicação</p>
     <button class="cta">Quero Automatizar Minhas Vendas</button>
   </header>
 
-  <!-- Seção da imagem de capa -->
   <section>
-    <div class="capa-container">
-      <img src="capa-landing.png" alt="Mulher sorrindo com tablet e elementos de IA" class="imagem-capa" />
-      <div class="frase-sobreposta">Transforme seu conhecimento em lucro com IA</div>
-    </div>
+    <!-- Ilustração simulando IA / vendas -->
+    <img src="capa-landing.png" alt="Pessoa usando IA para vender online" class="ilustracao" />
 
-    <!-- Vídeo principal -->
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/22z3H5YMJkA" frameborder="0" allowfullscreen></iframe>
 
-    <!-- Conteúdo da aula -->
     <h2>🔥 O que você vai aprender:</h2>
     <ul>
-      <li><span class="icon">🤖</span>Como criar páginas e funis automatizados com IA</li>
-      <li><span class="icon">🧠</span>Copywriting que converte enquanto você dorme</li>
-      <li><span class="icon">📈</span>Ferramentas para escalar seu curso ou e-book</li>
-      <li><span class="icon">✅</span>Modelos prontos e passo a passo aplicável hoje</li>
+      <li><span class="icon">🤖</span>Como criar funis e páginas com IA em minutos</li>
+      <li><span class="icon">🧠</span>Copy que vende por você 24h por dia</li>
+      <li><span class="icon">📈</span>Ferramentas que escalam seu produto digital</li>
+      <li><span class="icon">✅</span>Modelos prontos e passo a passo testado</li>
     </ul>
 
-    <!-- Formulário de inscrição -->
     <h2>📩 Inscreva-se gratuitamente:</h2>
-    <form action="https://SEULINKmailchimp.us1.list-manage.com/subscribe/post?u=XXXXXXX&amp;id=XXXXXXX" method="POST" target="_blank">
+    <form class="formulario" action="https://SEULINKmailchimp.us1.list-manage.com/subscribe/post?u=XXXXXXX&amp;id=XXXXXXX" method="POST" target="_blank">
       <input type="text" name="FNAME" placeholder="Seu nome" required />
       <input type="email" name="EMAIL" placeholder="Seu e-mail" required />
-      <button type="submit">Quero Receber o Conteúdo</button>
+      <button class="cta" type="submit">Quero Receber o Conteúdo</button>
     </form>
 
-    <!-- Depoimentos -->
     <h2>💬 Depoimentos reais:</h2>
-    <div class="depoimento">“Com as dicas dessa aula, lancei meu curso e fiz minhas primeiras 100 vendas em 2 semanas.” – Camila L.</div>
-    <div class="depoimento">“Configurei tudo em 1 dia e já tinha lead chegando!” – Rafael T.</div>
-    <div class="depoimento">“Escalei meu e-book sozinha com esse modelo.” – Juliana V.</div>
-    <div class="depoimento">“Hoje eu durmo tranquilo sabendo que minha aula trabalha por mim 24h por dia.” – Bruno C.</div>
+    <div class="depoimento">“Com essa aula, lancei meu curso e fiz 100 vendas em 2 semanas.” – Camila L.</div>
+    <div class="depoimento">“Configurei tudo em 1 dia e os leads começaram a chegar!” – Rafael T.</div>
+    <div class="depoimento">“Escalando meu e-book de forma automática com IA.” – Juliana V.</div>
+    <div class="depoimento">“Hoje minha página trabalha por mim 24h.” – Bruno C.</div>
 
-    <div class="garantia">🔒 Garantia: conteúdo 100% gratuito e prático. Sem pegadinhas.</div>
+    <div class="garantia">🔒 Garantia: conteúdo 100% gratuito e aplicável. Sem enrolação.</div>
 
-    <button class="cta">Garanta Sua Vaga na Aula Gratuita</button>
+    <div style="text-align: center; margin-top: 2rem;">
+      <button class="cta">Garanta Sua Vaga Agora</button>
+    </div>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     © 2025 Venda Automática com IA · Todos os direitos reservados
   </footer>
