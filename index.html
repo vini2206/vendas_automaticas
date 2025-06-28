@@ -131,6 +131,22 @@
       z-index: 999;
     }
 
+    .contador-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .contador-container p {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .contador-container #contador {
+      font-size: 1.6rem;
+      color: #dc2626;
+      font-weight: bold;
+    }
+
     @media (max-width: 700px) {
       header h1 {
         font-size: 1.8rem;
@@ -174,6 +190,11 @@
       </a>
     </div>
 
+    <div class="contador-container" data-aos="fade-up">
+      <p>⏳ Esta oportunidade expira em:</p>
+      <div id="contador"></div>
+    </div>
+
     <h2 data-aos="fade-up">📘 Seu E-book Digital:</h2>
     <div class="grid" data-aos="fade-up">
       <img src="capa-ebook.png" alt="Capa do e-book Automatize Suas Vendas com IA" style="width: 100%; max-width: 300px; height: auto; border-radius: 12px; display: block; margin: auto;" />
@@ -195,19 +216,4 @@
 
     <div style="text-align: center; margin-top: 2rem;" data-aos="zoom-in">
       <a href="https://chk.eduzz.com/xi4dnwax" class="cta" target="_blank" rel="noopener noreferrer">Comprar o E-book Agora</a>
-      <p style="text-align:center; color:#10b981; font-weight:bold; margin-top:1rem;">🔥 Acesso imediato ao conteúdo após a confirmação!</p>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Venda Automática com IA · Todos os direitos reservados
-  </footer>
-
-  <a href="https://wa.me/5519995042574" class="whatsapp-float" target="_blank" aria-label="Fale no WhatsApp" rel="noopener noreferrer">💬</a>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
+      <p style="text-align:center
